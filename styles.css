@@ -511,6 +511,12 @@ width: 100%;
 }
 .testimonial__ratings{
 margin-top: 1em;
+bottom: 0;
+}
+.testimonial__comment{
+    display: flex;
+   
+    position: relative;
 }
 /* FOOTER */
 footer{
@@ -526,6 +532,12 @@ footer{
     padding-top: 2.5em;
     font-size: 16px;
     letter-spacing: 2px;
+}
+.stars{
+    padding-left: 4px;
+    padding-right: 4px;
+    position: relative;
+    bottom: 0;
 }
 
 /* MEDIA QUEIRES */ 
@@ -667,5 +679,29 @@ font-size: 10px;
 .services__header{
     margin-top: -7em;
 }
+}
+@media (max-width: 400px){
+    .about_us--row1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_us--row2{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -3em;
+    }
+    #about_us{
+        height: max-content;
+    }
+    .about_us--card{
+        width: 80%;
+        margin-bottom: 1em;
+    }
+    .about_us--button-container{
+   margin-bottom: 2em;
+    }
+    .stars{
+        font-size: 12px;
+    }
 }
 
