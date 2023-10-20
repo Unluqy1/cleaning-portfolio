@@ -510,7 +510,7 @@ width: 100%;
     color: #494840;
 }
 .testimonial__ratings{
-    filter: brightness(0.8);
+margin-top: 1em;
 }
 /* FOOTER */
 footer{
@@ -555,6 +555,7 @@ footer{
         width: 480px;
         
     }
+    
     .landing-page__content--header{
         font-size: 36px;
   
@@ -613,10 +614,23 @@ margin-bottom: 8em;
    }
 }
 
-@media (max-width: 590px){
+@media (max-width: 610px){
+    .about_us--button-container{
+        margin-bottom: 20em;
+      }
+}
+
+@media (max-width: 595px){
     .about_us--para{
         font-size: 12px;
-        }
+    }
+  
+}
+
+@media (max-width: 520px){
+    .about_us--button-container{
+        width: 50%;
+    }
 }
 
 @media (max-width: 480px){
