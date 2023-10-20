@@ -106,7 +106,7 @@ justify-content: space-between;
 }
 
 .logo-content h2, h3{
-color: #80765d;
+color: #45443c;
 }
 .logo-content h2{
     font-size: 48px;
@@ -163,6 +163,9 @@ button:hover{
     left: 0;
 }
 
+.services--header{
+    color: #45443c;
+}
 .landing-page__content{
     max-width: 1000px;
     width: 100%;
@@ -178,18 +181,19 @@ align-items: left;
    
 }
 .landing-page__content--header{
-    color:#80765d;
+    color:#45443c;
     font-size: 64px;
     width: 80%;
     line-height: 1em;
-    padding-bottom: 0.8em;
 
 }
 .landing-page__content--para{
     color: #5e5848;
     font-size: 20px;
+    
     width: 60%; 
-    padding-bottom: 8px;
+    padding-top: 16px;
+    padding-bottom: 40px;
 }
 .landing-page__content--services{
     display: flex;
@@ -237,46 +241,8 @@ animation: button_wiggle 800ms 0.8s ease-in-out backwards;
 #landing-page__content--button:hover{
     cursor: pointer;
 }
-.landing-page__content-contact{
-    width: 80%;
-    background-color: #ccc2a7;
-    padding: 5%;
-    height: max-content;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    animation: fade-up 800ms 0.5s  ease backwards
-}
-.landing-page__content-contact-header{
-    font-size: 36px;
-    padding-bottom: 24px;
-}
-.landing-page__content--form{
-    display: flex;
-    flex-direction: column ;
-  
-}
-input{
 
-    outline: none;
-}
-.landing-page__form-content{
-    padding: 16px;
-    margin: 4px;
-    border-radius: 25px;
-    border: none;
-}
-#Submit-button{
-    background-color: #80765d;
-    color: #fff;
-    font-family: Mitr, sans-serif;
-    font-weight: 400;
-}
-#Submit-button:hover{
-  cursor: pointer;
-}
+
 
 /* ABOUT US */
 
@@ -287,6 +253,7 @@ input{
 .about_us--header{
     text-align: center;
     padding-bottom: 28px;
+    
 }
 #about_us .row{
     max-width: 1000px;
@@ -322,7 +289,7 @@ input{
 }
 .bold-text{
     font-family: Mitr,sans-serif;
-    color: #80765d;
+    color: #45443c;
     font-weight: 600;
 }
 .about_us--para{
@@ -519,17 +486,18 @@ bottom: 0;
     position: relative;
 }
 /* FOOTER */
-footer{
+#footer{
     background-color: #5e5848;
-    height: 10vh;
     color: #fff;
     font-family: Roboto, sans-serif;
+    padding-top: 1em;
+padding-bottom: 1em;
 }
 .copyright{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2.5em;
+   padding-top: 1em;
     font-size: 16px;
     letter-spacing: 2px;
 }
@@ -538,6 +506,39 @@ footer{
     padding-right: 4px;
     position: relative;
     bottom: 0;
+outline-color: #80765d;
+outline-style: solid;
+}
+
+.landing-page__content-contact{
+    display: flex;
+    align-items: center;
+    max-width: 40%;
+    margin:  auto;
+    justify-content: space-evenly;
+}
+.landing-page__content-contact-header{
+    color: #fff;
+}
+.landing-page__form-content{
+    padding: 4px 12px;
+    border-radius: 25px;
+    outline: 0;
+    border: 0;
+   
+}
+#Submit-button{
+    background-color: #a19f8a;
+    
+    color: #fff;
+    font-family: Mitr, sans-serif;
+    font-weight: 400;
+    transition: 200ms ease;
+}
+#Submit-button:hover{
+    filter: opacity(0.8);
+    cursor: pointer;
+    filter: brightness(1.1);
 }
 
 /* MEDIA QUEIRES */ 
@@ -625,249 +626,3 @@ margin-bottom: 8em;
     margin-top: -4em;
    }
 }
-
-@media (max-width: 610px){
-    .about_us--button-container{
-        margin-bottom: 20em;
-      }
-}
-
-@media (max-width: 595px){
-    .about_us--para{
-        font-size: 12px;
-    }
-  
-}
-
-@media (max-width: 520px){
-    .about_us--button-container{
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px){
-    .landing-page__content--header, .landing-page__content--para{
-        display: none;
-    }
-.landing-page__content{
-    width: 80%;
-    flex-direction: column;
-    justify-content: center;
-
-}
-.landing-page__content-contact{
-    margin-top: 2em;
-    width: 90%; 
-}
-
-.about_us--para{
-font-size: 10px;
-}
-.about_us--button-container{
-    width: 40%;
-}
-.services--button-container{
-    width: 100%;
-   
-}
-#services--button{
-    width: 40%;
-}
-#testimonials--button{
-    width: 40%;
-}
-.services__header{
-    margin-top: -7em;
-}
-}
-@media (max-width: 400px){
-    .about_us--row1{
-        flex-direction: column;
-        align-items: center;
-    }
-    .about_us--row2{
-        flex-direction: column;
-        align-items: center;
-        margin-top: -3em;
-    }
-    #about_us{
-        height: max-content;
-    }
-    .about_us--card{
-        width: 80%;
-        margin-bottom: 1em;
-    }
-    .about_us--button-container{
-   margin-bottom: 2em;
-    }
-    .stars{
-        font-size: 12px;
-    }
-}
-@media (max-height: 800px){
-    .landing-page__content-contact{
-        width: 50%;
-    }
-    .landing-page__content--form{
-        width: 105%;
-    }
-    .landing-page__content--form input{
-        padding: 8px;
-    }
-    .landing-page__content-contact-header{
-        font-size: 24px;
-    }
-    .copyright{
-        font-size: 12px;
-        padding-top: 2.5em;
-    }
-}
-@media (max-height: 700px){
-    #about_us{
-        margin-top: 8em;
-    }
-    .copyright{
-        font-size: 10px;
-     
-    }
-    .testimonial__comment{
-        width: 70%;
-     margin-bottom: 1em;
-    }
-    .testimonials__row1{
-        flex-direction: column;
-        align-items: center;
-    }
-    .testimonials__row2{
-
-        flex-direction: column;
-        align-items: center;
-    }
-    .testimonials__header h1{
-        font-size: 32px;
-    }
-    .services__header h1{
-        font-size: 32px;
-    }
-    .about_us--header h1{
-        font-size: 32px;
-    }
-    .services--header{
-     font-size: 20px;
-    }
-    .content__service{
-        font-size: 12px;
-    }
-}
-@media (max-height: 520px){
-    #about_us{
-        margin-top: 14em;
-    }
-}
-
-@media (max-height: 620px) and (max-width: 480px )
-{
-    #about_us{
-     
-        height: 100vh;
-    }
-    .about_us--button-container{
-        margin-bottom: 2em;
-    }
-}
-@media (max-height: 620px) and (max-width: 780px )
-{
-    #about_us{
-     margin-top: 15em;
-        height: 120% !important;
-    }
-    .about_us--button-container{
-        margin-bottom: 2em;
-    }
-    button{
-        padding: 4px !important;
-        font-size: 12px !important;
-    }
-  
-}
-@media (max-height: 620px) and (max-width: 1420px ){
-    #about_us{
-        margin-top: 10em;
-           height: 120% !important;
-       }
-       .about_us--button-container{
-        margin-bottom: 2em;
-    }
-}
-@media (max-height: 820px) and (max-width: 1180px){
-    .landing-page__navbar--list{
-        margin-left: -10em;
-      
-    }
-    .landing-page__navbar--links{
-        justify-content: flex-start;
-    }
-    .landing-page__navbar--link{
-        padding-right: 1em;
-        font-size: 16px;
-    }
-    .landing-page__content-intro{
-        width: 60%;
-    }
- 
-    .landing-page__content--header{
-        padding-bottom: 24px;
-    }
-    #about_us{
-        height: 60vh;
-    }
-
-}
-
-@media (max-height: 1368px) and (max-width: 912px){
-    #about_us{
-        height: 50%;
-        padding-bottom: 2em;
-    }
-    .landing-page__navbar--links{
-        justify-content: flex-start;
-justify-content: space-around;
-    }
-    .landing-page__navbar--link{
-        margin-left: 0;
-    }
-}
-
-@media (max-height: 720px) and (max-width: 540px){
-    #about_us{
-        margin-top: 5em;
-        height: 100vh;
-    }
-    .landing-page__content--para{
-        font-size: 12px;
-    }
-    .landing-page__content-contact{
-        width: 40%;
-        margin-right: 2em;
-    }
-    #services{
-        margin-top: -5em;
-    }
-}
-@media (max-width: 412px) and (max-height: 914px){
-  #about_us{
-    margin-top: -5em;
-    height: 70vh;
-  }
-  
-  
-}
-@media (max-width: 1024px) and (max-height: 600px){
-    .landing-page__navbar--links{
-        justify-content: space-around;
-    }
-    .landing-page__navbar--link{
-     padding: 0;
-    }
-}
-
