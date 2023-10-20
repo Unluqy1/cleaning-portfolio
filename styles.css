@@ -13,7 +13,7 @@
 h1,h2,h3,h4,h5,h6{
     font-family: Mitr, sans-serif;
     line-height: 1.5;
-    color: #80765d;
+    color: #45443c;
 }
 
 h1{
@@ -255,6 +255,7 @@ animation: button_wiggle 800ms 0.8s ease-in-out backwards;
     padding-bottom: 28px;
     
 }
+
 #about_us .row{
     max-width: 1000px;
     width: 100%;
