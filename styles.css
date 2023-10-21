@@ -349,7 +349,7 @@ align-items: center;
     border-radius: 25px;
   padding: 0 8px;
     overflow: hidden;
-   
+   flex: 1;
 }
 
 .service__item--picture{
